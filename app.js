@@ -13,4 +13,20 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use("/items", shoppingListRouter);
 
-export default app;
+app.get('/', (req, res)=> {
+    res.send('hello');
+
+});
+
+
+
+
+/* remover */
+app.listen(process.env.PORT,()=> {
+    console.log('listening');
+})
+
+/* remover */
+
+
+// export default app;
