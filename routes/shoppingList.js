@@ -21,6 +21,7 @@ router.get("/", async (req, res) => {
 
 router.post("/", async (req, res) => {
   const { listItem } = req.body;
+  console.log('req body: >>>>>',req.body)
   const result = await postListItem(listItem);
   res.status(201).json({ success: true, payload: result });
 });
