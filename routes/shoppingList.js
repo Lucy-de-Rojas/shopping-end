@@ -31,14 +31,14 @@ router.post("/", async (req, res) => {
 
 
 // UPDATE  completed:
-// router.update("/", async (req, res)=> {
+router.patch("/", async (req, res)=> {
 
-//   console.log(req.body);
+  console.log(req.body);
 
 
 
-//   res.json(req.body)
-// })
+  res.json(req.body)
+})
 
 
 
