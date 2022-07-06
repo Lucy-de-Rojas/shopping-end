@@ -31,7 +31,7 @@ router.post("/", async (req, res) => {
 
 
 // UPDATE  completed:
-router.update('/', async (req, res)=> {
+router.update("/", async (req, res)=> {
 
   console.log(req.body);
 
