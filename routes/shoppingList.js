@@ -18,7 +18,7 @@ router.get("/", async (req, res) => {
 
 
 
-
+// POST to shopping list:
 router.post("/", async (req, res) => {
   const { listItem } = req.body;
   console.log('req body: >>>>>',req.body)
@@ -28,6 +28,17 @@ router.post("/", async (req, res) => {
 
 
 
+
+
+// UPDATE  completed:
+router.update('/', async (req, res)=> {
+
+  console.log(req.body);
+
+
+
+  res.json(req.body)
+})
 
 
 
